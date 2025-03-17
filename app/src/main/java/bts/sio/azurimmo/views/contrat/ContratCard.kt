@@ -6,10 +6,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.shape.RoundedCornerShape
-import bts.sio.azurimmo.model.Appartement  // Mise à jour de l'import
+import bts.sio.azurimmo.model.Contrat  // Mise à jour de l'import
 
 @Composable
-fun AppartementCard(appartement: Appartement) {
+fun ContratCard(contrat: Contrat) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -20,8 +20,8 @@ fun AppartementCard(appartement: Appartement) {
         Column(
             modifier = Modifier.padding(16.dp)
         ) {
-            Text(text = appartement.description, style = MaterialTheme.typography.bodyLarge)
-            Text(text = "surface : "+appartement.surface, style = MaterialTheme.typography.bodyMedium)
+            Text(text = "debut : "+contrat.datedebut, style = MaterialTheme.typography.bodyMedium)
+            Text(text = "fin : "+contrat.datefin, style = MaterialTheme.typography.bodyMedium)
         }
     }
 }

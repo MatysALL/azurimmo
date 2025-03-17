@@ -6,4 +6,5 @@ data class Appartement(
     val surface: String,
     val nbpieces: Int,
     val description: String
+
 )

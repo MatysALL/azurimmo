@@ -21,7 +21,7 @@ fun AppNavigation(navController: NavHostController, modifier: Modifier = Modifie
             AppartementList()
         }
         composable("contrats_list") {
-            Text("Page contrats")
+            ContratList()
         }
         composable("locataires_list") {
             LocataireList()
